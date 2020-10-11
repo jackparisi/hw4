@@ -1,8 +1,8 @@
 var score = 0;
-var start = document.querySelector(".btn btn-success");
+var start = document.querySelector(".btn");
 var timeDisplay = document.querySelector("#time-left");
 var scoreDisplay = document.querySelector("#score-count");
-timeClock = 90
+timeClock = 90;
 var quiz = [
 {
  title: "Commonly used data types DO NOT include",
@@ -29,11 +29,17 @@ var quiz = [
     choices: ["Javascript", "Inspector", "Console Log", "Terminal"],
     answer: "Console Log"
 }];
-    
+var question = document.querySelector(".quiz-area");
+//var title1 = document.createTextNode(quiz[0].title);
+var title2 = document.createTextNode(quiz[1].title);
+var title3 = document.createTextNode(quiz[2].title);
+var title4 = document.createTextNode(quiz[3].title); 
+console.log(quiz[0].title)
 
 start.addEventListener("click", function(){
-   
- });  
+    var title1 = document.createTextNode(quiz[0].title);
+    question.appendChild(title1);
+});  
 
 for(i=0;i<quiz.length;i++){
  console.log(quiz.title)   
